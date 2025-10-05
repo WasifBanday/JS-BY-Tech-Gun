@@ -12,7 +12,7 @@ console.log(type3) // not a number
 
 /*
 
-Three functions are given by js for conersion 
+Three functions are given by js for conversion 
 1. string()
 2. Number()
 3. boolean()

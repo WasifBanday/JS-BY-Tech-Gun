@@ -5,7 +5,7 @@ console.log(str.length)
 let str2 = "banday";
 console.log(str + " ahmad " + str2)
 
-// concatition
+// concatition  : jodhna
 let str3 = str.concat(" ", str2);
 console.log(str3)
 
@@ -24,7 +24,7 @@ console.log(position)
 // How to turn a string into uppercase/lowercase
 let string1 = "This is js tutorial . It is a good tutorial"
 let upprcase = string1.toUpperCase();
-let lwrcse = string1.toLocaleLowerCase();
+let lwrcse = string1.toLowerCase();
 console.log(string1) // normal
 console.log(upprcase) // Upper-Case
 console.log(lwrcse) // lower-Case
