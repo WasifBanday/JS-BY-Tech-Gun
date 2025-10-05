@@ -45,9 +45,9 @@ console.log(NewType3) // not a number
 
 
 // boolean()  : number into  boolean
-let type7 = 0;
+let type7 = 1;
 console.log(typeof type7)
-    // Converting string into number
+    // Converting number into boolean
 let NewType4 = Boolean(type7);
 console.log(typeof NewType4)
 console.log(NewType4) // not a number
