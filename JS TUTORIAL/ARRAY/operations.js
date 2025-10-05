@@ -23,7 +23,7 @@ books.shift() // Math hatgya
 console.log(books)
 
 // 6. Deleting elements at any place in an array
-books.splice(1, 2) // Urdu aur kashmiri hatt jayaega (1 se 2 tak waley hateingey )
+books.splice(1, 2) // Urdu aur kashmiri hatt jayaega (1 se 2 index waley hateingey )
 console.log(books)
 
 // 7. Find position of any element in an array
@@ -31,7 +31,7 @@ let position = books.indexOf('Bio')
 console.log(position)
 
 // 8. How to check if the data is array or not 
-let book = 'math'
+let book = 'histoy'
 console.log(Array.isArray(book)) // False 
 console.log(Array.isArray(books)) // True
 
