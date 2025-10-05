@@ -1,4 +1,4 @@
-// Two ways to make an declare array 
+// Two ways to make and declare array 
 
 let books = ["Math", "Physics", "Bio", "Chemistry", "12"];
 
