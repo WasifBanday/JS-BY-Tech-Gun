@@ -3,6 +3,6 @@
 let books = ["Math", "Physics", "Bio", "Chemistry"];
 books.forEach(mybook)
 
-function mybook(ok) {
-    console.log(ok)
+function mybook(value) {
+    console.log(value)
 }
