@@ -3,10 +3,9 @@ function MulTable() {
 
         for (let j = 1; j <= 10; j++) {
 
-            console.log(`${i} x ${j} = ${i*j} \n`)
+            console.log(`${i} x ${j} = ${i*j}`)
         }
-
+        console.log(`\n`)
     }
-
 }
 MulTable();
