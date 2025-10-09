@@ -11,3 +11,7 @@ function add() {
 }
 
 add(7, 8, 9, 9, 8, 88)
+
+// Function ko variable mai store karna 
+let addition = add; // storing function in an variable , we can call it with this variable also
+addition(6, 9, 9, 9, 8)
