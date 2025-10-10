@@ -9,4 +9,3 @@ console.log(dt) // Month starts from 0 in J-S ( 0--> january)
 // We can pass parameters as a string as well
 let str = new Date("june 12,2023 11:12:22")
 console.log(str)
-console.log(str.getTime()) // The computer stores mili-seconds from 1970 to the date we provided .
