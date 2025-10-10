@@ -22,4 +22,4 @@ console.log(str.getMinutes());
 console.log(str.getSeconds());
 
 // How to get Day name 
-console.log(str.getDay()); // 3 means wednesday , because it starts with  ' 0 as monday'
+console.log(str.getDay()); // 3 means wednesday , because it starts with  ' 0 as sunday' , Ends with '6 as saturday'
