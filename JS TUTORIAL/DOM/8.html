@@ -1,0 +1,29 @@
+<!-- How to change and fetch html by innerHTML in JS -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="intro">
+        <p> Hello this i a p tag </p>
+    </div>
+
+    <script>
+        let elm = document.getElementById("intro")
+            // fetch
+            // let content = elm.innerHTML;
+            // console.log(content)
+
+        // change innerText
+        elm.innerHTML = "<h1> This is a Heading </h1>"
+    </script>
+</body>
+
+</html>
