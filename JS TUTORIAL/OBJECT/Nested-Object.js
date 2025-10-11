@@ -4,7 +4,7 @@ let user = { // Main Object
 
     personalInfo: { // 1st Sub object
         name: "wasif",
-        class: '5ht',
+        class: '5th',
 
         address: { // 1st Sub-Sub object
             street: '2nd',
