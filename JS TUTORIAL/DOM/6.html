@@ -1,0 +1,42 @@
+<!-- Traversing : Indirect Selection parent-children or children-parent etc -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h2>heading 1 </h2>
+
+    <ul id="intro">
+        <li> list 1 </li>
+        <li> list 2 </li>
+        <li> list 3 </li>
+        <li> list 4 </li>
+    </ul>
+
+    <ul>
+        <li> list a </li>
+        <li> list b </li>
+        <li> list c </li>
+        <li> list d </li>
+    </ul>
+
+    <script>
+        // select  children from parent
+        let elm = document.getElementById("intro")
+        let node = elm.firstElementChild; // UL ka First Li select hoga 
+        let node2 = elm.lastElementChild; //  UL ka Last wala Li select hoga
+        let node3 = elm.children; // Ul k sarey Li select houngey
+        console.log(node)
+        console.log(node2)
+        console.log(node3)
+    </script>
+</body>
+
+</html>
