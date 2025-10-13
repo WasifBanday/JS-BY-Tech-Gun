@@ -17,12 +17,13 @@
     </ul>
 
     <script>
-        // Adding new li in ul at last
+        // Adding new li in ul , at any position ...
         let list1 = document.getElementById("list")
-
         let item = document.createElement("li")
         item.textContent = "New list 5"
-        list1.appendChild(item)
+            // Adding New list 5 , at 2nd place
+        let position = list1.firstElementChild.nextElementSibling;
+        list1.insertBefore(item, position)
     </script>
 
 
