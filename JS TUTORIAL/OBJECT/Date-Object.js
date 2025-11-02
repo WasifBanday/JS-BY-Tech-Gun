@@ -4,7 +4,7 @@ console.log(x)
     // let syntax = new Date(year, month, day, hour, minute, Second, mili - second)
     // Minimum we have to give year and month 
 let dt = new Date(2024, 0, 12, 11, 32, 23, 3)
-console.log(dt) // Month starts from 0 in J-S ( 0--> january)
+console.log(dt) // Month starts from 0 in J-S ( '0' means --> january)
 
 // We can pass parameters as a string as well
 let str = new Date("june 12,2023 11:12:22")

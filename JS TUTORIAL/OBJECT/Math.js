@@ -6,8 +6,8 @@ console.log(Math.PI) // value of pi
 // There are various functions of math which are defined 
 
 // Round-off function   
-let a = Math.round(4.3)
-let b = Math.round(4.8)
+let a = Math.round(4.3) // Output 4
+let b = Math.round(4.8) // Output 5
 console.log(a)
 console.log(b)
 
