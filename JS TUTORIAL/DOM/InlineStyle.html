@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= v, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <button id="btn">Send</button>
+
+    <script>
+        // 1st Method
+        let btn = document.getElementById("btn")
+            // Plus'+' operator use kartey hai taki agar pehle se style laga hua ho usmai toh woh override na hokey Add ho
+        btn.style.cssText += "background-color:red; color:white"
+
+        // 2nd Method
+        btn.setAttribute("style", "background-color:Green")
+    </script>
+</body>
+
+</html>
