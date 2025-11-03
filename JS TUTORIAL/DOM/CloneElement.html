@@ -16,11 +16,12 @@
     </ul>
 
     <script>
-        let parent = document.getElementById("menu")
-        let elm = parent.firstElementChild.nextElementSibling
-        console.log(elm) // Use for debugging to see in console what is being selected 
-        parent.removeChild(elm)
+        let menu = document.getElementById("menu")
+        let cloneElm = menu.cloneNode(true) // If true is not written only the parent elemnt will be copied not its child 
+        cloneElm.id = "mobile-menu"
+        document.body.appendChild(cloneElm)
     </script>
+
 </body>
 
 </html>
