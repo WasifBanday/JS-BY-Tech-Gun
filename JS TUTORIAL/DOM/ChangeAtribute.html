@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <button id="btn" name2="form2" name3="form3">Send</button>
+
+    <script>
+        // Adding new button by js
+        let btn = document.getElementById("btn")
+        btn.setAttribute("name", "form1")
+
+        // How to know value of attribute who is already set
+        let val = btn.getAttribute("name2")
+        console.log(val)
+
+        // how to remove attribute
+        let val2 = btn.removeAttribute("name3")
+
+        // how to check is there any attribute present or not
+        let has = btn.hasAttribute("name")
+        console.log(has)
+    </script>
+</body>
+
+</html>
