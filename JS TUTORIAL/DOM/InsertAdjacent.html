@@ -1,0 +1,35 @@
+<!-- POWER METHOD -->
+<!-- We have 4 positions for adding html in this and we dont need to create new element , it takes it as normal text-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 1: Beforebegin -->
+    <div id="intro">
+
+        <!-- 2: Afterbegin -->
+
+        <h2>Heading</h2>
+        <p>This is a p tag</p>
+
+        <!-- 3: BeforeEnd -->
+    </div>
+    <!--4: AfterEnd -->
+
+    <script>
+        let elm = document.getElementById("intro")
+        let newElm = "<h1> New H1 </h>"
+        elm.insertAdjacentHTML('beforebegin', newElm) //
+    </script>
+
+
+</body>
+
+</html>
