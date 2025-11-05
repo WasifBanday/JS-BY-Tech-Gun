@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <button id="btn"> Click Me </button>
+
+    <script>
+        let btn = document.getElementById("btn");
+
+        // Same 2 events on one button 
+        function click1() {
+            console.log("Click1 Activated")
+        }
+
+        function click2() {
+            console.log("Click2 Activated")
+        }
+        btn.addEventListener('click', click1)
+        btn.addEventListener('click', click2)
+
+        // Removing click2 function
+        btn.removeEventListener('click', click2)
+    </script>
+
+
+</body>
+
+</html>
