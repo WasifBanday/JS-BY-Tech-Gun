@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #box {
+            height: 100px;
+            width: 100px;
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="box"></div>
+
+    <script>
+        window.addEventListener('keydown', check1Key)
+
+        function check1Key(event) {
+            console.log(event.key)
+        }
+
+        window.addEventListener('keyup', check2Key)
+
+        function check2Key(event) {
+            console.log(event.key)
+        }
+    </script>
+
+
+</body>
+
+</html>
