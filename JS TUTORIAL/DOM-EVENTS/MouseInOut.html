@@ -12,13 +12,18 @@
     <button id="btn" onclick="btnclick()"> Click Me </button>
 
     <script>
-        function btnclick() {
-            alert("Button was clicked !")
-        }
-
         let btn = document.getElementById("btn");
-        //   event name under cotations ' ' ... but not , function name or can create our own anonymous function if one time use s
-        btn.addEventListener('click', btnclick)
+        btn.addEventListener('click', function() {
+            alert("Button was clicked !")
+        })
+
+        btn.addEventListener('mouseover', function() {
+            alert("mouse over is activated ")
+
+        })
+        btn.addEventListener('mouseout', function() {
+            alert("mouse out is activated")
+        })
     </script>
 
 
