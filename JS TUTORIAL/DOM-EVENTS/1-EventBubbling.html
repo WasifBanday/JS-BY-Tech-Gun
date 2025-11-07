@@ -44,8 +44,13 @@
         d.addEventListener('click', divClicked)
         document.body.addEventListener('click', bodyClicked)
 
-        function btnClicked() {
+        // We can stop The propagation as well --> Means if we click on button only button will be executed ..
+
+        function btnClicked(event) {
             console.log("Button clicked ...")
+
+            event.stopPropagation();
+
         }
 
         function divClicked() {
