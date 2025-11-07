@@ -8,3 +8,54 @@
 
 <!-- **  By default it's False and follows bubbling event  ** -->
 <!-- **  When True follows capturing event  ** -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            padding: 200px;
+            background-color: bisque;
+        }
+        
+        div {
+            padding: 100px;
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="myDiv">
+        <button id="btn">Click Me</button>
+    </div>
+
+    <script>
+        let d = document.getElementById("myDiv")
+        let b = document.getElementById("btn")
+
+        b.addEventListener('click', btnClicked, true)
+        d.addEventListener('click', divClicked, true)
+        document.body.addEventListener('click', bodyClicked, true)
+
+        function btnClicked() {
+            console.log("Button clicked ...")
+        }
+
+        function divClicked() {
+            console.log("div clicked ...")
+        }
+
+        function bodyClicked() {
+            console.log("body clicked ...")
+        }
+    </script>
+
+</body>
+</html
