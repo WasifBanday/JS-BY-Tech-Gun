@@ -1,0 +1,35 @@
+<!-- :-  The browser Object Model (BOM) is used to interact with the browser  -->
+<!-- :-  The main object in this is " WINDOW " -->
+<!-- :-  The window object represents a window in browser  -->
+<!-- :-  An object of window is created automatically by  the browser  -->
+
+<!-- :-  All global Javascript object , function , and variable with the 'VAR KEYWORD' automatically becomes members of the window object  -->
+
+<!-- :-  Global variables are the properties of the window object -->
+<!-- :-  Global functions are methods of the window object -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        // Only VAR keyword will work ... 
+        var x = "hello"
+        console.log(window.x)
+
+        // Try with Function
+        function xyz() {
+            console.log("hi...")
+        }
+        window.xyz();
+    </script>
+</body>
+
+</html>
