@@ -1,0 +1,32 @@
+<!--  Yeh kaam ko repeat karta hai , jo aapnay dea hoga  -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="btn">clear Interval</button>
+
+
+    <script>
+        // After every 2 seconds , it will print 'please subscribe...'  , on console
+        var t1 = setInterval(fun, 2000)
+
+        function fun() {
+            console.log("please subscribe...")
+        }
+
+        // Can clear this time out too , lets make an button and on click it will be turned off ...
+        let btn1 = document.getElementById('btn')
+        btn1.addEventListener('click', function() {
+            clearInterval(t1)
+        })
+    </script>
+</body>
+
+</html>
