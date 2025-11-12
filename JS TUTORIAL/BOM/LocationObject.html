@@ -1,0 +1,46 @@
+<!-- dohh (2)  kaam hotey hai ess object k  -->
+<!-- (1)  current url k barey mai information jann na -->
+<!-- (2)  dusray url pa redirect karna -->
+
+<!-- It has some properties , and methods  -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="btn" onclick="fun()">Redirect to Google</button>
+
+    <script>
+        // Properties of this location object
+        console.log(window.location.href)
+        console.log(location.pathname)
+        console.log(location.protocol)
+
+        // Methods of this location object
+        // Redirecting the url
+        function fun() {
+            // 1st , Method
+            window.location = "https://www.google.com"
+
+            // 2nd , Method
+            location.href = "https://www.google.com"
+
+            // 3rd , Method
+            // Upar waley dohh method ise pa chalteyy hai ...
+            // Yeh methods browser ki history mai entry daltay hai   ...
+            location.assign("https://www.google.com")
+
+            // 4th , Method 
+            // yeh wala browser ki history mai entry nahi dalta
+            location.replace("https://www.google.com")
+        }
+    </script>
+</body>
+
+</html>
