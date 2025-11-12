@@ -13,10 +13,14 @@
 
     <script>
         // 5 seconds k baadh ayega : please subscribe... :
-        setTimeout(myFunction, 5000)
+        let timeoutID = setTimeout(myFunction, 5000)
 
         function myFunction() {
             alert("please subscribe...")
+        }
+        // How to turn this setTimeout  ...off
+        if (userr == AlreadySubscribed) {
+            clearTimeout(timeoutID)
         }
     </script>
 </body>
